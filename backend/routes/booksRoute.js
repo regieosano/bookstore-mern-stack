@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     const books = await Book.find({})
     res.status(200).json({
       count: books.length,
-      books: books
+      data: books
     })
   } catch (error) {
     console.log(error)

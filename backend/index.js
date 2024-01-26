@@ -7,7 +7,7 @@ import booksRoute from './routes/booksRoute.js'
 const app = express()
 
 app.use(cors({
-	origin: 'http://localhost:3000',
+	origin: 'http://localhost:5173',
 	methods: ['GET', 'POST', 'PATCH', 'DELETE'],
 	allowedHeaders: ['Content-Type', 'Authorization']
 }))
