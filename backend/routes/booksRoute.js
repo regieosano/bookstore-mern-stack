@@ -21,6 +21,7 @@ router.get('/:id', async (req, res) => {
     const { id } = req.params
 
     const book = await Book.findById(id)
+		
     res.status(200).json(book)
   } catch (error) {
     console.log(error)
